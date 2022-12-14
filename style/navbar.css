@@ -1,3 +1,18 @@
+a:focus,
+a:hover,
+a:visited,
+a:link,
+a:active {
+  text-decoration: inherit !important;
+
+  color: inherit;
+}
+
+a:hover,
+a:active,
+a:link {
+  color: var(--primary);
+}
 .navbar {
   background: var(--bg-primary);
   display: flex;
@@ -33,21 +48,52 @@
 
 .nav-item {
   display: flex;
-
   flex-flow: column;
   flex-basis: fit-content;
 
   font-size: 0.75rem;
   line-height: 3rem;
+
+  align-items: center;
+  padding: 0rem 0.5rem 0 0.5rem;
 }
 
 .nav-icon {
+  position: relative;
+  align-items: center;
+
   line-height: 1.5rem;
   padding-top: 0.25rem;
+  flex: 1;
+
+  transition: all 0.2s ease-in-out;
+}
+.nav-item-text {
+  top: 1.5rem;
+  position: absolute;
+  transition: all 0.2s ease-in-out;
 }
 
-.nav-item-text {
-  line-height: 1rem;
+.nav-item.active {
+  color: var(--primary);
+}
+.nav-item.active .nav-icon {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+
+  padding-top: 0.75rem;
+}
+.nav-item.active .nav-item-text {
+  opacity: 0;
+}
+.nav-item:hover .nav-icon {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+
+  padding-top: 0.75rem;
+}
+.nav-item:hover .nav-item-text {
+  opacity: 0;
 }
 
 .user {
@@ -79,7 +125,6 @@
   border: 1px solid var(--border-color);
   border-radius: 0.5rem;
 
-  box-sizing: border-box;
   font-size: 0.75rem;
   text-align: center;
 

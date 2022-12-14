@@ -2,11 +2,7 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faClipboardList,
-  faHouse,
-  faListUl,
-} from '@fortawesome/free-solid-svg-icons';
+import { faClipboardList, faHouse } from '@fortawesome/free-solid-svg-icons';
 
 import '../style/navbar.css';
 
@@ -35,16 +31,20 @@ class NavBar extends React.Component {
   render() {
     return (
       <div className="navbar">
-        <div className="logo">LOATracker</div>
+        <div className="logo">
+          <a href="#" className="noDecoration">
+            LOATracker
+          </a>
+        </div>
         <div className="nav">
-          <a className="nav-item">
+          <a href="#" className="nav-item active">
             <span className="nav-icon">
               <FontAwesomeIcon icon={faHouse} />{' '}
             </span>
             <span className="nav-item-text"> Home </span>
           </a>
 
-          <a className="nav-item">
+          <a href="#" className="nav-item">
             <span className="nav-icon">
               <FontAwesomeIcon icon={faClipboardList} />{' '}
             </span>
