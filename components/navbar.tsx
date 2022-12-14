@@ -31,20 +31,16 @@ class NavBar extends React.Component {
   render() {
     return (
       <div className="navbar">
-        <div className="logo">
-          <a href="#" className="noDecoration">
-            LOATracker
-          </a>
-        </div>
+        <div className="logo">LOATracker</div>
         <div className="nav">
-          <a href="#" className="nav-item active">
+          <a href="/" className="nav-item">
             <span className="nav-icon">
               <FontAwesomeIcon icon={faHouse} />{' '}
             </span>
             <span className="nav-item-text"> Home </span>
           </a>
 
-          <a href="#" className="nav-item">
+          <a href="/tracker" className="nav-item">
             <span className="nav-icon">
               <FontAwesomeIcon icon={faClipboardList} />{' '}
             </span>
