@@ -16,9 +16,9 @@ class NavBar extends React.Component {
     const state = window.getComputedStyle(profModal, null).display;
 
     if (state === 'none') {
-      profModal.style.display = 'flex';
+      // profModal.style.display = 'flex';
     } else {
-      profModal.style.display = 'none';
+      // profModal.style.display = 'none';
     }
     console.log('Profile Button Clicked');
   };

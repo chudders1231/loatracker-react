@@ -15,18 +15,17 @@
 html,
 body {
   width: 100vw;
-  height: 100vh;
-}
 
-#root {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-
   background-color: var(--bg-secondary);
   color: white;
 
-  padding: 0.75rem;
   box-sizing: border-box;
+}
+
+#root {
+  padding: 0.75rem;
 }
 
 h1 {
@@ -39,7 +38,7 @@ h2 {
 
 .body {
   max-width: 920px;
-  margin: 0.75rem auto 0 auto;
+  margin: 0.75rem auto 0.75rem auto;
 
   background-color: var(--bg-primary);
 
