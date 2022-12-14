@@ -12,6 +12,12 @@
   padding: 0px;
 }
 
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
 #root {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
@@ -21,10 +27,6 @@
 
   padding: 0.75rem;
   box-sizing: border-box;
-
-  width: 100vw;
-  height: 100vh;
-  max-width: 100%; /* added */
 }
 
 h1 {
@@ -33,63 +35,6 @@ h1 {
 h2 {
   font-size: 0.75rem;
   opacity: 0.75;
-}
-
-.navbar {
-  background: var(--bg-primary);
-  display: flex;
-  flex-flow: row;
-
-  column-gap: 0.25rem;
-
-  line-height: 3rem;
-
-  border: 1px solid var(--border-color);
-
-  box-shadow: 0rem 0rem 0.25rem rgba(15, 15, 25, 0.75);
-  border-radius: 0.5rem;
-  max-width: 920px;
-
-  margin: 0 auto 0 auto;
-}
-
-.navbar > .logo {
-  padding-left: 1rem;
-  flex: 1;
-}
-
-.navbar > .nav {
-  display: flex;
-  flex-flow: row;
-
-  text-align: center;
-
-  justify-content: space-between;
-  column-gap: 0.25rem;
-  flex: 1;
-}
-
-.nav > .nav-item {
-  flex-basis: fit-content;
-}
-
-.navbar > .user {
-  text-align: end;
-  padding-right: 1rem;
-
-  display: flex;
-  justify-content: flex-end;
-
-  align-items: center;
-
-  flex: 1;
-}
-
-.navbar > .user > .user-img {
-  width: 2.5rem;
-  height: 2.5rem;
-
-  border-radius: 50%;
 }
 
 .body {
@@ -105,10 +50,4 @@ h2 {
 
   border: 1px solid var(--border-color);
   box-shadow: 0rem 0rem 0.25rem rgba(15, 15, 25, 0.75);
-}
-
-@media screen and (max-width: 500px) {
-  .navbar > .nav {
-    display: none;
-  }
 }
